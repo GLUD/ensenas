@@ -66,3 +66,35 @@ body{
     display: block;
     background: gris;
 }
+/*......................paneles........................*/
+.slide{
+    display: flex;
+}
+.slide > div{
+    width: 100%;
+    height: 33%;
+    background color: antiquewhite;
+    
+}
+.imgslide{
+    position: absolute;
+    width: 30%;
+    align-content: center;
+    left: 25%;
+}
+
+.videoslide{
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    left:  -0.5%;
+    
+}
+.palabraslide{
+    position: absolute;
+    bottom: 10%;
+    font-size: 10vw;
+    left: 28%;
+}
+
+
