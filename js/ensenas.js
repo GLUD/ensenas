@@ -1,13 +1,14 @@
 
 var inicioX;
 var finX;
-function paneles(id){
+function paneles(id,id2){
 	var numeropaneles = id.length;
+	var contenedor = document getElementById (id2);
 	this.style.width = numeropaneles*100+'%';
 	for (i = 0; i <= numeropaneles -1; i++){
-		this.innerHTML += '<div class="slide"><div><img class="imgslide" src="../img/'id[numeropaneles]'.svg"></div><div><video autoplay class="videoslide" src="../video/'id[numeropaneles]'.webm"></video></div><div><h1 class="palabraslide">'id[numeropaneles]'</h1></div></div>'
+		this.innerHTML += '<div class="slide"><div><img class="imgslide" src="../imagenes/'+id[i]+'.svg"></div><div><video autoplay class="videoslide" src="../videos/'+id[i]+'.webm"></video></div><div><h1 class="palabraslide">'+id[i]+'</h1></div></div>';
 	}
-	var slide = getElementByClass('slide');
+	var slide = document.getElementsByClassName('slide');
 	slide.style.width = 100/numeropaneles+"%";
 }
 function nuevo(id){
@@ -23,16 +24,18 @@ function nuevo(id){
 }
 function saber(grupopalabras){
 	var contador = 0; 
-	var cantidadpalabras = Object.keys(grupopalabras);
+	var cantidadpalabras = grupopalabras.length;
 	var cantidadpalabras = contador.length;
 	
   console.log('inicio del toque ' +inicioX +' final del toque '+ finX);
   if(inicioX < finX){
     console.log('***De izquierda a derecha***');
-	 
+	 contador++;
   }else{
     console.log('***De derecha a izquierda***');
+	contador= contador-1;
   }
+  if()
 }
 
 window.addEventListener('load', function(){nuevo('touch');
