@@ -4,7 +4,7 @@
 <head>
 	
     <link rel="stylesheet" media="all and (orientation:portrait)" type="text/css" href="../css/ensenas.css">
-	<script type="text/javascript" src="../js/rondadecolores.js"></script>
+	<script type="text/javascript" src="../js/ensenas.js"></script>
 <meta charset="utf-8" />
 <title>sans titre</title>
 <meta name="generator" content="Geany 1.26" />
@@ -13,14 +13,15 @@
 <body>
 <!--------------- Pantalla 1 -------------------------->    
 	<div class="pantalla" id="index">
-        <video autoplay class="videoindex" src="../videos/videoindex.webm"></video>
+        <video autoplay class="videoindex" src="../videos/videoindex.webm" loop></video>
+        <video autoplay class="videoindex" src="../videos/videoindex.webm" loop></video>
 		<h1 class="tituloindex">Enseñas</h1>
         <div class="iconos">
-            <a href="#saludos" >
-                <img class="imgindex" src="../imagenes/saludos.svg">
-            </a>
-            <a href="#presentacion" class="centro" >
+            <a class= "icono1"href="#presentacion" >
                 <img class="imgindex" src="../imagenes/presentacion.svg">
+            </a>
+            <a href="#saludos" class="centro" >
+                <img class="imgindex" src="../imagenes/saludos.svg">
             </a>
             <a href="#familia" >
                 <img class="imgindex" src="../imagenes/familia.svg">
@@ -30,21 +31,22 @@
    
 <!--------------- Pantalla 2 -------------------------->
 	<div class="pantalla" id="saludos">
-        <a href="#"><h1>X</h1></a>
-            <div id="contenedor" onload="paneles(saludos)" >  
+        <h1 id="enunciadosaludos"><a href="#">&#10094;</a>
+Saludos</h1>
+        <div id="contenedor1" onload="paneles(saludos)" >  
             </div>
     </div>
 		
 <!--------------- Pantalla 3 -------------------------->
 	<div class="pantalla" id="presentacion">
-		<a href="#"><h1>X</h1></a>
-            <div id="contenedor" onload="paneles(presentación)" >
+        <h1 id="enunciadopresentacion"><a href="#">&#10094;</a>Presentación</h1>
+            <div id="contenedor2" onclick="paneles(presentación)" >
             </div>
 	</div>
 <!--------------- Pantalla 4 -------------------------->
 	<div class="pantalla" id="familia">
-        <a href="#"><h1>X</h1></a>
-            <div id="contenedor" onload="paneles(familia)" >
+        <h1 id="enunciadofamilia"><a href="#">&#10094;</a>Familia</h1>
+            <div id="contenedor3" onload="paneles(familia)" >
             </div>
 	</div>
 </body>
